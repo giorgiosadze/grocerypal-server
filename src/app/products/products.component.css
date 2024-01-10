@@ -1,0 +1,13 @@
+.product-card {
+  margin-left:0.5%;
+  min-width:20%;
+}
+.example-card {
+    max-width: 250px;
+    padding: 25px 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-bottom: 50px;
+}

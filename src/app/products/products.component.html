@@ -1,0 +1,20 @@
+<h2>Products</h2>
+<div style="display:flex; flex-wrap:wrap; min-width:100%;">
+        <mat-card *ngFor="let product of mock_products" class="product-card">
+          <mat-card-header>
+            <div mat-card-avatar class="product-header-image"></div>
+            <mat-card-title>{{product.name}}</mat-card-title>
+            <mat-card-subtitle>{{product.name}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="../../assets/images/apple-evil.png" alt="Photo of {{product.name}}">
+          <mat-card-content>
+            <p>
+              {{product.name}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary">Add</button>
+            <button mat-raised-button color="accent" routerLink="/product_detail/{{product.id}}">View Details</button>
+          </mat-card-actions>
+        </mat-card>
+</div>
